@@ -23,6 +23,62 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.navbar-lg {
+  padding: 20px 50px 25px 50px !important;
+  height: 80px;
+  background: #fff;
+}
+.nav-logo {
+  font-size: 35px;
+  font-weight: 900;
+}
+.color-primary {
+  color: #478e71;
+}
+.btn-primary {
+  background: #478e71 !important;
+  border-color: #478e71 !important;
+}
+.color-card1 {
+  padding: 25px !important;
+  height: 170px;
+  background-image: linear-gradient(to bottom right, #ee8a77, #ef9280);
+}
+.color-card2 {
+  padding: 25px !important;
+  height: 170px;
+  background-image: linear-gradient(to bottom right, #e67bc8, #e08ec9);
+}
+.color-card3 {
+  padding: 25px !important;
+  height: 170px;
+  background-image: linear-gradient(to bottom right, #f4ab5c, #f5b879);
+}
+
+.card-btn1 {
+  background: #fff !important;
+  color: #ee8a77 !important;
+  width: fit-content;
+  height: fit-content;
+  /* border-color: #fff; */
+  border-radius: 50px !important;
+}
+.card-btn2 {
+  background: #fff !important;
+  color: #e67bc8 !important;
+  width: fit-content;
+  height: fit-content;
+  /* border-color: #fff; */
+  border-radius: 50px !important;
+}
+.card-btn3 {
+  background: #fff !important;
+  color: #f4ab5c !important;
+  width: fit-content;
+  height: fit-content;
+  /* border-color: #fff; */
+  border-radius: 50px !important;
+}
 
 .App-link {
   color: #61dafb;
