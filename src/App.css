@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.body {
+  background: #f7f7f7;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -95,8 +98,43 @@
   color: #2f64ce;
   font-style: oblique;
 }
-.item-margen: {
+.item-margen {
   margin-top: 100px;
+}
+.item-card {
+  height: 400px;
+  width: 100%;
+  border-radius: 40px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item-img {
+  height: 180px;
+  width: 70%;
+  margin-top: 30px;
+}
+.w100 {
+  width: 100%;
+}
+.item-cart {
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  border: 2px solid #f7f7f7;
+}
+.item-cart:hover {
+  background: #478e71;
+}
+.item-cart:hover img {
+  filter: invert(1);
+}
+.item-cart:hover p {
+  color: #e57bc8;
 }
 .App-link {
   color: #61dafb;

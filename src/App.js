@@ -7,11 +7,11 @@ import ItemList from "./components/itemList";
 
 function App() {
   return (
-    <>
+    <div className="body">
       <NavBar />
       <ColorCardList />
       <ItemList />
-    </>
+    </div>
   );
 }
 

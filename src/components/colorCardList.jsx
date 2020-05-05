@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import ColorCard from "./common/colorCard";
-import ItemCard from "./common/itemCard";
+
 class ColorCardList extends Component {
   state = {
     content: [
       {
+        id: 1,
         title: "Gift Voucher",
         description: "With personal care items",
         btnText: "Shop Coupan",
@@ -15,6 +16,7 @@ class ColorCardList extends Component {
         descriptionClass: "card-description",
       },
       {
+        id: 2,
         title: "Coupan Savings",
         description: "Upto 40% off everyday essentials",
         btnText: "Shop Coupan",
@@ -24,6 +26,7 @@ class ColorCardList extends Component {
         titleClass: "card-title",
       },
       {
+        id: 3,
         title: "Free Delivery",
         description: "With seleceted items",
         btnText: "Shop Now",
@@ -36,9 +39,9 @@ class ColorCardList extends Component {
   };
   render() {
     return (
-      <div className="row p-5">
+      <div className="row p-5" style={{ background: "#fff" }}>
         {this.state.content.map((data) => (
-          <div className="col-4">
+          <div key={data.id} className="col-4">
             <ColorCard content={data} />
           </div>
         ))}
