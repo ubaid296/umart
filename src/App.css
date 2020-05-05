@@ -47,12 +47,12 @@
 .color-card2 {
   padding: 25px !important;
   height: 170px;
-  background-image: linear-gradient(to bottom right, #e67bc8, #e08ec9);
+  background-image: linear-gradient(to bottom right, #ffad5f, #e3a86d);
 }
 .color-card3 {
   padding: 25px !important;
   height: 170px;
-  background-image: linear-gradient(to bottom right, #f4ab5c, #f5b879);
+  background-image: linear-gradient(to bottom right, #e57bc8, #ce83b9);
 }
 
 .card-btn1 {
@@ -60,30 +60,47 @@
   color: #ee8a77 !important;
   width: fit-content;
   height: fit-content;
+  margin-top: 20px;
   /* border-color: #fff; */
   border-radius: 50px !important;
 }
 .card-btn2 {
   background: #fff !important;
-  color: #e67bc8 !important;
+  color: #feb167 !important;
   width: fit-content;
+
   height: fit-content;
   /* border-color: #fff; */
   border-radius: 50px !important;
 }
 .card-btn3 {
   background: #fff !important;
-  color: #f4ab5c !important;
+  color: #e386c9 !important;
   width: fit-content;
   height: fit-content;
+  margin-top: 20px;
   /* border-color: #fff; */
   border-radius: 50px !important;
 }
-
+.card-title {
+  color: #fff;
+  font-size: large;
+  font-style: oblique;
+}
+.card-description {
+  color: #fff;
+  font-size: small;
+}
+.item-title {
+  color: #2f64ce;
+  font-style: oblique;
+}
+.item-margen: {
+  margin-top: 100px;
+}
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -8,9 +8,9 @@ class ColorCard extends Component {
     return (
       <div className={cardClasses}>
         <div className="row">
-          <div className="col-6">
-            <h5>{this.props.content.title}</h5>
-            <p>{this.props.content.description}</p>
+          <div className="col-6" card-title>
+            <h5 className="card-title">{this.props.content.title}</h5>
+            <p className="card-description">{this.props.content.description}</p>
             <button className={btnClasses}>{this.props.content.btnText}</button>
           </div>
           <div className="col-6">
