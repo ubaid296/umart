@@ -63,7 +63,7 @@
   color: #ee8a77 !important;
   width: fit-content;
   height: fit-content;
-  margin-top: 20px;
+  margin-top: 0px;
   /* border-color: #fff; */
   border-radius: 50px !important;
 }
@@ -182,4 +182,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.discount {
+  position: absolute;
+  top: 20px;
+  font-size: 12px;
+  right: 17px;
+  color: #fff;
+  background: #ffad5f;
+  padding: 3px 10px;
+  border-radius: 30px;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
