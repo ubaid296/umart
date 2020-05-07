@@ -14,7 +14,7 @@ class NavBar extends Component {
           <div className=" d-flex col-5">
             <input
               type="text"
-              className="form-control"
+              className="form-control input-filed"
               placeholder="Search products"
             />
           </div>

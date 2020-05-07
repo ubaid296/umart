@@ -26,7 +26,7 @@ class ItemCard extends Component {
             <p className="item-quantity">{productWeight}</p>
           </div>
           <div className="w100">
-            <strike className="item-sale">$8</strike>
+            <strike className="item-sale">{productSale}</strike>
           </div>
           <div className="w100">
             <div className="row">
