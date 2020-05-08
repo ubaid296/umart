@@ -5,78 +5,64 @@ class ItemList extends Component {
   state = {
     item: [
       {
+        id: 1,
         title: "banana",
         productWeight: "8pc(s)",
-        productPrice: "$10",
-        productSale: "$3",
+        productPrice: 10,
         path: "/images/bananas.jpg",
-        titleClass: "item-title",
-        quantityClass: "item-qunatity",
-        priceClass: "item-price",
-        saleClass: "item-sale",
       },
       {
+        id: 2,
         title: "Onion",
         productWeight: "8pc(s)",
-        productPrice: "$6",
-        productSale: "$5",
+        productPrice: 6,
         path: "/images/onion.jpg",
-        quantityClass: "item-qunatity",
-        priceClass: "item-price",
+        discount: 10,
       },
       {
+        id: 3,
         title: "Grapes",
         productWeight: "5pc(s)",
-        productPrice: "$15",
-        productSale: "$10",
+        productPrice: 15,
         path: "/images/grapes.jpg",
-        quantityClass: "item-qunatity",
-        priceClass: "item-price",
+        discount: 12,
       },
       {
+        id: 4,
         title: "Coconut",
         productWeight: "10pc(s)",
-        productPrice: "$7",
-        productSale: "$2",
+        productPrice: 7,
         path: "/images/coconut.jpg",
-        quantityClass: "item-qunatity",
-        priceClass: "item-price",
       },
       {
+        id: 5,
         title: "Garlis",
         productWeight: "8pc(s)",
-        productPrice: "$20",
-        productSale: "$10",
+        productPrice: 20,
         path: "/images/garlic.jpg",
-        quantityClass: "item-qunatity",
-        priceClass: "item-price",
+        discount: 5,
       },
       {
+        id: 6,
         title: "GreenApple",
         productWeight: "12pc(s)",
-        productPrice: "$10",
-        productSale: "$4",
+        productPrice: 10,
         path: "/images/apple.jpg",
-        quantityClass: "item-quantity",
-        priceClass: "item-price",
       },
       {
+        id: 7,
         title: "Lemon",
         productWeight: "12pc(s)",
-        productPrice: "$10",
-        productSale: "$4",
+        productPrice: 10,
         path: "/images/lemon.jpg",
-        quantityClass: "item-quantity",
-        priceClass: "item-price",
+        discount: 7,
       },
       {
+        id: 8,
         title: "Oranges",
         productWeight: "12pc(s)",
-        productPrice: "$10",
-        productSale: "$4",
+        productPrice: 10,
         path: "/images/orange.jpg",
-        quantityClass: "item-quantity",
-        priceClass: "item-price",
       },
     ],
   };
@@ -84,7 +70,7 @@ class ItemList extends Component {
     return (
       <div className="row p-5">
         {this.state.item.map((data) => (
-          <div className="col-3">
+          <div className="col-3" key={data.id}>
             <ItemCard item={data} />
           </div>
         ))}

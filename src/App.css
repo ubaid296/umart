@@ -63,7 +63,7 @@
   color: #ee8a77 !important;
   width: fit-content;
   height: fit-content;
-  margin-top: 20px;
+  margin-top: 0px;
   /* border-color: #fff; */
   border-radius: 50px !important;
 }
@@ -104,18 +104,21 @@
   white-space: nowrap;
   margin: 0px 0px 7px;
   overflow: hidden;
+  margin-left: 15px;
 }
 .item-quantity {
   font-family: Lato, sans-serif;
   font-size: 13px;
   font-weight: 400;
   color: #708090;
+  margin-left: 15px;
 }
 .item-price {
   font-family: Lato, sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: #08a183;
+  margin-left: 0px;
 }
 .item-margen {
   margin-top: 100px;
@@ -126,6 +129,7 @@
   font-weight: 400;
   color: rgb(251, 185, 121);
   font-style: italic;
+  margin-left: 15px;
 }
 .item-card {
   color: rgb(31, 199, 45);
@@ -175,9 +179,49 @@
   margin-top: 10px;
   margin-left: 30px;
 }
+.input1-filed {
+  position: absolute;
+  top: 380px;
+  text-align: center;
+  margin-left: 360px;
+}
+.btn-grocery {
+  position: absolute;
+  color: #008b8b;
+  text-size-adjust: inherit;
+  top: 380px;
+  margin-left: 1000px;
+}
+.button-Text {
+  font-size: 10px;
+  margin-left: 10px;
+}
+.span-grocery {
+  position: absolute;
+  color: #008b8b;
+  text-size-adjust: inherit;
+  top: 385px;
+  margin-left: 362px;
+  border-radius: 100px;
+  border: 100px;
+  border-color: lawngreen;
+}
+.btn-join {
+  margin-top: 10px;
+}
 .hiding-text {
   text-align: center;
-  margin-left: 500px;
+  position: absolute;
+  top: 250px;
+  margin-left: 350px;
+  font-size: 50px;
+}
+.hiding1-text {
+  text-align: center;
+  position: absolute;
+  top: 330px;
+  margin-left: 420px;
+  font-size: medium;
 }
 .App-link {
   color: #61dafb;
@@ -189,4 +233,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.discount {
+  position: absolute;
+  top: 20px;
+  font-size: 12px;
+  right: 17px;
+  color: #fff;
+  background: #ffad5f;
+  padding: 3px 10px;
+  border-radius: 30px;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }

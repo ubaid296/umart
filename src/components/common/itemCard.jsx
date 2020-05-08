@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { getDiscountedValue } from "../../lib";
 
 class ItemCard extends Component {
   render() {
@@ -6,13 +7,14 @@ class ItemCard extends Component {
       title,
       productWeight,
       productPrice,
-      productSale,
+      discount,
       path,
     } = this.props.item;
 
     return (
       <div className="row item-card">
-        <div className="w100">
+        <div className="w100" style={{ position: "relative" }}>
+          {discount && <p className="discount">{discount}%</p>}
           <img
             src={path}
             className="align-center item-img"
@@ -26,12 +28,18 @@ class ItemCard extends Component {
             <p className="item-quantity">{productWeight}</p>
           </div>
           <div className="w100">
-            <strike className="item-sale">{productSale}</strike>
+            {discount && <strike className="item-sale">${productPrice}</strike>}
           </div>
           <div className="w100">
             <div className="row">
               <div className="col-6">
-                <p className="item-price">{productPrice}</p>
+                {discount ? (
+                  <p className="item-price">
+                    ${getDiscountedValue(productPrice, discount)}
+                  </p>
+                ) : (
+                  <p className="item-price">${productPrice}</p>
+                )}
               </div>
               <div className="col-6">
                 <div className="row item-cart">

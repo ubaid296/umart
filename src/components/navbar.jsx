@@ -19,7 +19,9 @@ class NavBar extends Component {
             />
           </div>
           <div className="col">
-            <button className="btn btn-primary float-right">Join</button>
+            <button className="btn btn-primary btn-join float-right">
+              Join
+            </button>
           </div>
         </div>
       </nav>
