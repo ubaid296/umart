@@ -42,7 +42,7 @@ class Header extends Component {
         </div>
         <div>
           <img
-            src="/images/food.jpg"
+            src="/images/agri.jpg"
             alt="background"
             width="100%"
             height="700px"
