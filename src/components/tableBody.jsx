@@ -6,8 +6,16 @@ const TableBody = ({ data, fields }) => {
       {data.map((item) => (
         <tr key={item.id}>
           {fields.map((filed) => (
-            <td className="text-center">{item[filed.toLowerCase()]}</td>
+            <td className="text-center ">{item[filed.toLowerCase()]} </td>
           ))}
+          <td>
+            <button
+              onClick={() => this.hanldeDelete(this.props.data)}
+              className="btn btn-danger btn-sm"
+            >
+              Delete
+            </button>
+          </td>
         </tr>
       ))}
     </tbody>
