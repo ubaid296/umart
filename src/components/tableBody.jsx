@@ -1,6 +1,6 @@
 import React from "react";
 
-const TableBody = ({ data, fields }) => {
+const TableBody = ({ data, fields, onDelete }) => {
   return (
     <tbody>
       {data.map((item) => (
@@ -10,7 +10,7 @@ const TableBody = ({ data, fields }) => {
           ))}
           <td>
             <button
-              onClick={() => this.hanldeDelete(this.props.data)}
+              onClick={() => onDelete(item)}
               className="btn btn-danger btn-sm"
             >
               Delete

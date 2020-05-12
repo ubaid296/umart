@@ -12,9 +12,16 @@ class Home extends Component {
       { id: 5, name: "Graps", price: 250, discount: 2.5, rating: 2.5 },
     ],
   };
+
+  handleDelete = (item) => {
+    let { data } = this.state;
+    const index = data.indexOf(item);
+    data.splice(index, 1);
+    this.setState({ data });
+  };
   render() {
     const { data, fields } = this.state;
-    return <Table data={data} fields={fields} />;
+    return <Table data={data} fields={fields} onDelete={this.handleDelete} />;
   }
 }
 
