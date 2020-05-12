@@ -6,7 +6,9 @@ const TableBody = ({ data, fields, onDelete }) => {
       {data.map((item) => (
         <tr key={item.id}>
           {fields.map((filed) => (
-            <td className="text-center ">{item[filed.toLowerCase()]} </td>
+            <td key={`${filed}-${item.id}`} className="text-center ">
+              {item[filed.toLowerCase()]}{" "}
+            </td>
           ))}
           <td>
             <button
